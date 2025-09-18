@@ -1,43 +1,49 @@
-Project Description
-Quantum Circuit Simulator/Visualizer: The user can design a quantum circuit by placing quantum gates on qubit lines and visualizing the quantum circuit. The VGA display visually represents the selected quantum circuit layout. Once the circuit is executed, the simulator computes the quantum state and displays the final measurement result of the qubits as well as bloch sphere. The user selects the quantum gate and places it on the qubit using the PS/2 keyboard and audio will be played when the user interacts.
-The user can toggle between the initial states of the qubit lines using push buttons. 
-Intro to Project video : IMG_7897.mov
-Demo Video : IMG_7876.MOV 
-Block Diagram Iniail :  
+# Quantum Circuit Simulator / Visualizer (DE1-SoC)
 
+Design, simulate, and **visualize quantum circuits** on an FPGA. Place gates on qubit lines via PS/2 keyboard, see the layout on VGA, then run the simulation to view **measurement results** and **Bloch sphere** states. Includes audio feedback and hardware button controls.
 
-Updated Block Diagram:
+##  System Overview
+https://cpulator.01xz.net/?sys=rv32-de1soc 
 
-Images :
-Starting Page
+### Block Diagram
+<img width="1040" height="550" alt="image" src="https://github.com/user-attachments/assets/059e3a7d-eb20-4a2a-908f-069020a2dd56" />
 
-Circuit Page
+[🎥 Intro Video](https://drive.google.com/file/d/1zs84S7syiwwLpPiYiG_ydYeDh8zNORlE/view?usp=sharing)  
+[🎥 Demo Video](https://drive.google.com/file/d/1X59DS0ua7ZcYQfr9I3pKQoOaoxn_Hf03/view?usp=sharing)
 
-Output pages
+---
+<img width="883" height="568" alt="image" src="https://github.com/user-attachments/assets/dda16662-76c2-4d4c-9580-08441a5d6499" />
 
+##  Features
 
-Measured probabilities in terminal
+- **Interactive Circuit Design**
+  - Place gates (H, X, Z, CNOT, …) using the **PS/2 keyboard**
+  - Toggle qubit initial states with **push buttons**
+  - Live **VGA** circuit rendering (start screen → circuit editor → output pages)
 
+- **Simulation & Visualization**
+  - **R** to run the circuit and show final measurement results
+  - **B** to render **Bloch sphere** visualization
+  - Prints measured probabilities to the **terminal (UART/JTAG)**
 
-How to navigate with the project : 
-User presses KEY0 to START move to circuit page
-User can toggle between the initial states of the qubit line using the push button
-User can place a quantum gate on a qubit line by PS/2 keyboard 
-For eg. Placing H gate on Qubit line 0 
-User press 0 on keyboard -> press H -> press Enter
-User can Run the simulation by press R and the final measurements page would appear as well as user can press B to see the Bloch sphere simulation
-User can reset by pressing ESC and backspace key.
+- **UX / Feedback**
+  - **Audio** cue on interactions (gate placement, transitions)
+  - **ESC / Backspace** to reset and return to the circuit page
 
-Division Of Work (Attribution Table)
-Arnab Mandal
-Muhammad Ahmed
--Circuit Logic/Quantum Measurement/Bloch Sphere Display VGA
--Output Integration with  / Output character display
--PS/2 Mouse integration (however, the channel splitter did not work so we did not move forward with it).
-- Switch integration with control gates
--Interactive VGA Display (Starting page, character buffer displays, Circuit page- placement of quantum gates based on user input,  output pages with reset).
--PS/2 Keyboard integration
--Sound integration
-- KeyPress Integration (toggling between the initial states of the qubit lines )
+---
 
+##  Quick Navigation (Controls)
+
+| Action                               | Input                          |
+|--------------------------------------|--------------------------------|
+| Start (go to Circuit page)           | `KEY0` (push button)          |
+| Toggle initial state of a qubit line | On-board **push buttons**      |
+| Place gate on a qubit                | `qubit_index` → `GateKey` → `Enter`  |
+| Example (H on qubit 0)               | `0` → `H` → `Enter`            |
+| Run simulation                       | `R`                            |
+| Show Bloch sphere                    | `B`                            |
+| Reset / Back                         | `ESC` or `Backspace`           |
+
+> Gate keys (example): `H`, `X`, `Z`, `C` (CNOT), …  
+---
 
