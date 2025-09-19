@@ -1,9 +1,8 @@
-# Quantum Circuit Simulator / Visualizer (DE1-SoC)
+# Quantum Circuit Simulator(Visualizer) (DE1-SoC)
 
 Design, simulate, and **visualize quantum circuits** on an FPGA. Place gates on qubit lines via PS/2 keyboard, see the layout on VGA, then run the simulation to view **measurement results** and **Bloch sphere** states. Includes audio feedback and hardware button controls.
 
 ##  System Overview
-
 [🎥 Intro Video](https://drive.google.com/file/d/1zs84S7syiwwLpPiYiG_ydYeDh8zNORlE/view?usp=sharing)  
 [🎥 Demo Video](https://drive.google.com/file/d/1X59DS0ua7ZcYQfr9I3pKQoOaoxn_Hf03/view?usp=sharing)
 
