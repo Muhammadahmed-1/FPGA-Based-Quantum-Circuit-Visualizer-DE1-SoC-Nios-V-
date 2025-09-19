@@ -3,13 +3,14 @@
 Design, simulate, and **visualize quantum circuits** on an FPGA. Place gates on qubit lines via PS/2 keyboard, see the layout on VGA, then run the simulation to view **measurement results** and **Bloch sphere** states. Includes audio feedback and hardware button controls.
 
 ##  System Overview
+
+[🎥 Intro Video](https://drive.google.com/file/d/1zs84S7syiwwLpPiYiG_ydYeDh8zNORlE/view?usp=sharing)  
+[🎥 Demo Video](https://drive.google.com/file/d/1X59DS0ua7ZcYQfr9I3pKQoOaoxn_Hf03/view?usp=sharing)
+
 https://cpulator.01xz.net/?sys=rv32-de1soc 
 
 ### Block Diagram
 <img width="1040" height="550" alt="image" src="https://github.com/user-attachments/assets/059e3a7d-eb20-4a2a-908f-069020a2dd56" />
-
-[🎥 Intro Video](https://drive.google.com/file/d/1zs84S7syiwwLpPiYiG_ydYeDh8zNORlE/view?usp=sharing)  
-[🎥 Demo Video](https://drive.google.com/file/d/1X59DS0ua7ZcYQfr9I3pKQoOaoxn_Hf03/view?usp=sharing)
 
 ---
 <img width="883" height="568" alt="image" src="https://github.com/user-attachments/assets/dda16662-76c2-4d4c-9580-08441a5d6499" />
